@@ -1,4 +1,16 @@
 public class StringTest {
+    static void anzahlVorkommen(String str, char ch)
+    {
+        int anzahl = 0;
+        for (int i = 0; i <str.length(); i++) {
+            char ch2 = str.charAt(i);
+            if (ch2 == ch)
+            {
+                anzahl++;
+            }
+        }
+        System.out.printf("Anzahl von %s : %d %n", ch, anzahl);
+    }
 
     public static void main(String[] args) {
         char c = 'A';
