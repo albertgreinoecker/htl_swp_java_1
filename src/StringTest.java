@@ -1,4 +1,5 @@
 public class StringTest {
+
     public static void main(String[] args) {
         char c = 'A';
         String s1 = "ASDFASDF";
