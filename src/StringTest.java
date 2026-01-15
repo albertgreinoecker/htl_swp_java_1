@@ -56,5 +56,8 @@ public class StringTest {
 
         boolean b2 = htl.startsWith("hallo");
         System.out.println("Fängt mit hallo an:" + b2);
+
+        anzahlVorkommen("asdfaaX", 'a');
+
     }
 }
