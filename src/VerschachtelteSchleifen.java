@@ -34,8 +34,17 @@ public class VerschachtelteSchleifen {
             System.out.println();
         }
     }
-    public static void main(String[] args) {
+
+    static void warten() throws InterruptedException {
+        for (int i = 0; i < 10; i++) {
+            Thread.sleep(1000);
+            System.out.println(i);
+        }
+    }
+
+    public static void main(String[] args) throws InterruptedException {
         //einmaleins(20);
-        koordinaten(10);
+        //koordinaten(10);
+        warten();
     }
 }
