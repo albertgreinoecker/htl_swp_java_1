@@ -30,9 +30,11 @@ public class StringArray {
         }
         return res;
     }
+
+
     public static void main(String[] args) {
         //einfacheAusgabe();
-        int anzahl1 = anzahlVorkommen("Heute ist Donnerstag, das ist der Programmiertag", 't');
+        int anzahl1 = anzahlVorkommen("Heute ist Donnerstag,das ist der Programmiertag.Sehr super", 't');
         int anzahl2 = anzahlVorkommen("Morgen ist Freitag, das ist der beste Tag weil der Tag darauf Samstag ist", 'a');
         System.out.println(anzahl1 + anzahl2);
         String res = umdrehen("asdfjklö");
