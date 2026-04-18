@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Lotto {
     static void ausgabe(int[] xx) {
         for (int i = 0; i < xx.length; i++) {
@@ -49,7 +51,15 @@ public class Lotto {
         return count;
     }
     public static void main(String[] args) {
-        int[] tipp = {20,10,7,5,1,44};
+        //int[] tipp = {20,10,7,5,1,44};
+        int[] tipp = new int[6];
+        Scanner s = new Scanner(System.in);
+        for (int i = 0; i < tipp.length;i++)
+        {
+            System.out.printf("Bitte die Zahl %d eingeben %n", i+1);
+            tipp[i] = s.nextInt();
+        }
+        s.close();
 
         for (int i = 0; i < 200; i++) {
             int[] lz = lottoZahlen();
